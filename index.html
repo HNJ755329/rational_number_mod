@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rust WASM Example</title>
+    <script type="module">
+        import init, { qmod_wasm } from './pkg/q_mod.js';
+
+        async function run() {
+            await init();
+            const result = qmod_wasm(12345489, 998244353);
+            document.getElementById('output').textContent = `2 + 3 = ${result}`;
+        }
+
+        run();
+    </script>
+</head>
+<body>
+    <h1>Rust WASM Example</h1>
+    <div id="output"></div>
+</body>
+</html>
