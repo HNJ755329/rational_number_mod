@@ -2,6 +2,7 @@
 name = "q_mod"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/HNJ755329/rational_number_mod"
 
 [lib]
 crate-type=["cdylib"]
