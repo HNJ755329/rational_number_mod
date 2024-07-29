@@ -2,6 +2,15 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub struct Quotient(pub i64, pub i64);
+#[wasm_bindgen]
+impl Quotient {
+    pub fn get_num(&self) -> i64 {
+        return self.0;
+    }
+    pub fn get_div(&self) -> i64 {
+        return self.1;
+    }
+}
 
 #[wasm_bindgen]
 pub fn qmod_wasm(u: i64, m: i64, debug: bool) -> Quotient {
