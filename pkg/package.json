@@ -1,0 +1,15 @@
+{
+  "name": "q_mod",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "q_mod_bg.wasm",
+    "q_mod.js",
+    "q_mod.d.ts"
+  ],
+  "main": "q_mod.js",
+  "types": "q_mod.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
